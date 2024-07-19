@@ -1,4 +1,3 @@
-/* Custom CSS */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 body {
@@ -25,8 +24,6 @@ body {
     padding-left: 30px;
     padding-right: 30px;
 }
-
-//
 .carousel {
     .carousel-caption {
         position: static;
@@ -158,16 +155,10 @@ body {
             font-weight: 400;
         }
     }
-
-    ;
 }
-
-
-//
 
 .hovered .introduction {
     display: none;
-    /* Hide introduction on hover */
 }
 
 .hovered {
@@ -192,7 +183,7 @@ body {
 
 .frame-image {
     position: absolute;
-    width: 70%;
+    width: 75%;
     height: auto;
     display: none;
     top: 70%;
@@ -202,8 +193,6 @@ body {
 
 .hovered .orange-bg-circle {
     display: block;
-    /* Show the image on hover */
-
 }
 
 .popcorn-section {
@@ -218,7 +207,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* Added to make the section align vertically */
 }
 
 .circle {
@@ -283,8 +271,11 @@ body {
     width: 400px;
     height: 500px;
     flex: 0 0 auto;
-    /* Prevent flex items from shrinking or growing */
     border: 1px solid #938988;
+}
+
+.glass-card:hover {
+    background: #FEB273;
 }
 
 .circle-arrow {
@@ -300,16 +291,6 @@ body {
     justify-content: center;
 }
 
-.card-title {
-    border-bottom: 1px solid #938988;
-    padding: 5%;
-    text-align: center;
-    color: white;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 34px;
-}
-
 .circle-arrow::before {
     content: '';
     position: absolute;
@@ -320,11 +301,38 @@ body {
     backdrop-filter: blur(5px);
 }
 
-.arrow {
-    max-width: 50%;
-    max-height: 50%;
-    object-fit: contain;
+.glass-card:hover .circle-arrow,
+.circle-arrow:hover {
+    background: #FEB273;
+    ;
+}
+
+.glass-card:hover .circle-arrow::before,
+.circle-arrow:hover::before {
+    background: #FEB273;
+    ;
+}
+
+.circle-arrow img {
     z-index: 999;
+}
+
+.card-title {
+    border-bottom: 1px solid #938988;
+    padding: 5%;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.image-card img {
+    transition: transform 0.3s;
+}
+
+.glass-card:hover .image-card img {
+    transform: scale(1.1);
 }
 
 .cards-container {
@@ -346,6 +354,14 @@ body {
     scrollbar-width: none;
 }
 
+.glass-card:hover,
+.circle-arrow:hover,
+.glass-card:hover .circle-arrow,
+.circle-arrow:hover .glass-card {
+    background: #FEB273;
+    ;
+}
+
 .frame-image {
     display: none;
 }
@@ -362,7 +378,6 @@ body {
     margin-top: 100px;
 }
 
-//
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;

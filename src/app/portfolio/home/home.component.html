@@ -23,45 +23,47 @@
             </div>
         </nav>
     </div>
-    <div class="introduction" [ngClass]="{'disploay-intro': isHovered}" (mouseenter)="toggleHover(true)"
-        (mouseleave)="toggleHover(false)">
-        <div class="d-flex justify-content-center align-items-center mt-5">
-            <div class="position-relative border border-dark d-flex justify-content-center align-items-center"
-                style="width: 100px; height: 40px; border-radius: 20px;">
-                <span class="font-weight-bold text-black">Hello!</span>
-                <img src="../../../assets/images/Vector 1.svg" alt="Leaf Image" class="position-absolute"
-                    style="width: 50px; height: 50px;top: -35px;right: -44px; ">
+    <div (mouseenter)="toggleHover(true)" (mouseleave)="toggleHover(false)">
+        <div class="introduction" [ngClass]="{'disploay-intro': isHovered}">
+            <div class="d-flex justify-content-center align-items-center mt-5">
+                <div class="position-relative border border-dark d-flex justify-content-center align-items-center"
+                    style="width: 100px; height: 40px; border-radius: 20px;">
+                    <span class="font-weight-bold text-black">Hello!</span>
+                    <img src="../../../assets/images/Vector 1.svg" alt="Leaf Image" class="position-absolute"
+                        style="width: 50px; height: 50px;top: -35px;right: -44px; ">
+                </div>
+            </div>
+            <div class="intro-text position-relative d-flex justify-content-center">
+                <div class="text-center position-relative d-inline-block">
+                    <div>I'm <span>Shoaib,</span></div>
+                    <div>Software Developer</div>
+                    <img src="../../../assets/images/Vector 2.svg" alt="Leaf Image" class="positioned-image">
+                </div>
             </div>
         </div>
-        <div class="intro-text position-relative d-flex justify-content-center">
-            <div class="text-center position-relative d-inline-block">
-                <div>I'm <span>Shoaib,</span></div>
-                <div>Software Developer</div>
-                <img src="../../../assets/images/Vector 2.svg" alt="Leaf Image" class="positioned-image">
+        <div class="d-flex justify-content-between w-100 image-section" [ngClass]="{'hovered': isHovered}">
+            <div class="w-25 left">
+                <div class="mb-4"><i class="fa fa-solid fa-quote-left fa-xl" style="color: #344054;"></i></div>
+                Innovative Software Developer with a
+                proven track record in designing and
+                efficient coding.
             </div>
-        </div>
-    </div>
-    <div class="d-flex justify-content-between w-100 image-section" [ngClass]="{'hovered': isHovered}">
-        <div class="w-25 left">
-            <div class="mb-4"><i class="fa fa-solid fa-quote-left fa-xl" style="color: #344054;"></i></div>
-            Innovative Software Developer with a
-            proven track record in designing and
-            efficient coding.
-        </div>
-        <div class="orange-bg-circle w-50 d-flex justify-content-center ">
-            <img src="../../../assets/images/Untitled_design__23__1-removebg-preview (2).png" alt="Person Image"
-                class="person-image">
-        </div>
-        <img src="../../../assets/images/Frame 68.svg" [ngClass]="{'hovered': isHovered}" class="frame-image" alt="">
+            <div class="orange-bg-circle w-50 d-flex justify-content-center ">
+                <img src="../../../assets/images/Untitled_design__23__1-removebg-preview (2).png" alt="Person Image"
+                    class="person-image">
+            </div>
+            <img src="../../../assets/images/Frame 68.svg" [ngClass]="{'hovered': isHovered}" class="frame-image"
+                alt="">
 
-        <div class="w-25 right">
-            <div><img src="../../../assets/images/Frame 4.svg" style="width: 130px;" alt=""></div>
-            <div class="years">10 YEARS</div>
-            <div class="exp">Experience</div>
+            <div class="w-25 right">
+                <div><img src="../../../assets/images/Frame 4.svg" style="width: 130px;" alt=""></div>
+                <div class="years">10 YEARS</div>
+                <div class="exp">Experience</div>
+            </div>
+
         </div>
 
     </div>
-
     <!-- popcorn section  -->
     <div class="popcorn-section">
         <div class="circle">
@@ -75,7 +77,7 @@
 
         <div class="cards-container mt-5">
             <div class="card glass-card">
-                <div class="card-body">
+                <div class="card-body p-0">
                     <h5 class="card-title">UI/ UX Design</h5>
                 </div>
                 <div class="image-card">
@@ -86,7 +88,7 @@
                 </div>
             </div>
             <div class="card glass-card">
-                <div class="card-body">
+                <div class="card-body p-0">
                     <h5 class="card-title">3D Modeling</h5>
                 </div>
                 <div class="image-card">
@@ -97,7 +99,7 @@
                 </div>
             </div>
             <div class="card glass-card">
-                <div class="card-body">
+                <div class="card-body p-0">
                     <h5 class="card-title">.Net Development</h5>
                 </div>
                 <div class="image-card">
@@ -108,7 +110,7 @@
                 </div>
             </div>
             <div class="card glass-card">
-                <div class="card-body">
+                <div class="card-body p-0">
                     <h5 class="card-title">Frontend Dev</h5>
                 </div>
                 <div class="image-card">
@@ -119,7 +121,7 @@
                 </div>
             </div>
             <div class="card glass-card">
-                <div class="card-body">
+                <div class="card-body p-0">
                     <h5 class="card-title">Angular Dev</h5>
                 </div>
                 <div class="image-card">
@@ -130,7 +132,7 @@
                 </div>
             </div>
             <div class="card glass-card">
-                <div class="card-body">
+                <div class="card-body p-0">
                     <h5 class="card-title">SQL Database</h5>
                 </div>
                 <div class="image-card">
@@ -141,7 +143,7 @@
                 </div>
             </div>
             <div class="card glass-card">
-                <div class="card-body">
+                <div class="card-body p-0">
                     <h5 class="card-title">SSMS</h5>
                 </div>
                 <div class="image-card">
@@ -152,7 +154,7 @@
                 </div>
             </div>
             <div class="card glass-card">
-                <div class="card-body">
+                <div class="card-body p-0">
                     <h5 class="card-title">React</h5>
                 </div>
                 <div class="image-card">
@@ -165,7 +167,7 @@
         </div>
     </div>
     <div>
-        <div class="text-center mt-5" style="font-size: 40px; font-weight: 400;">
+        <div class="text-center mt-5 mb-5" style="font-size: 40px; font-weight: 400;">
             Feature <span style=" color: #FEB273;">Projects</span>
         </div>
         <div class="d-flex w-100 justify-content-center flex-wrap" style="gap:3%">
@@ -187,7 +189,8 @@
             <div class="rounded text-center text-white p-4 mb-3"
                 style="width: 350px; height: 350px; background-color: #424242;">
                 <div style="font-size: 32px;" class="mb-2">Smart HR System</div>
-                <img src="../../../assets/images/Saas2-removebg-preview 1.svg" class="w-100" style="height: 80%;" alt="">
+                <img src="../../../assets/images/Saas2-removebg-preview 1.svg" class="w-100" style="height: 80%;"
+                    alt="">
             </div>
             <div class="rounded text-center text-white p-4 mb-3"
                 style="width: 350px; height: 350px; background-color: #424242;">
@@ -202,8 +205,9 @@
         </div>
     </div>
 
-    <div style="background-color: #424242; height: auto;border-radius: 20px;" class="w-100 text-center why-hire-me pb-5">
-        <div style="margin: 2% 0%;padding: 2% 0% 0% 0%;">why <span>Hire Me</span></div>
+    <div style="background-color: #424242; height: auto;border-radius: 20px;"
+        class="w-100 text-center why-hire-me pb-5">
+        <div style="margin: 2% 0%;padding: 2% 0% 0% 0%;">why <span>Hire Me?</span></div>
         <p class="mb-5">
             As a passionate software developer, I offer technical expertise, innovative problem-solving skills, and a
             commitment to continuous learning.
@@ -239,7 +243,12 @@
         </div>
     </div>
 
-    <div id="testimonialCarousel" class="carousel slide mt-5 rounded m-5" style="background-color: #424242;"
+    <div class="project-ideas d-flex flex-column justify-content-center align-items-center mt-5">
+        <div> Happy <span>Clients</span></div>
+        <img src="../../../assets/images/Line 6.svg" alt="">
+    </div>
+
+    <div id="testimonialCarousel" class="carousel slide mt-5 m-5" style="background-color: #424242;border-radius: 20px;"
         data-ride="carousel">
         <div class="carousel-inner p-5">
             <div class="carousel-item  active" data-aos="fade-right">
@@ -295,8 +304,11 @@
         </a>
     </div>
 
-    <div class="text-center project-ideas">
-        Have a new <span>Project Idea?</span> <br> <span>Lets</span> Discuss!
+    <div class="text-center project-ideas d-flex flex-column justify-content-center align-items-center">
+        <div>Have a new <span>Project Idea?</span> <br> <span>Lets</span> Discuss!</div>
+        <img src="../../../assets/images/Line 6.svg" alt="">
+        <button class="mt-4"
+            style="width: 100px; height: 50px;background: black; color: white;border-radius: 10px;font-size: 16px;">Contact</button>
     </div>
 </div>
 <!-- footer  -->
