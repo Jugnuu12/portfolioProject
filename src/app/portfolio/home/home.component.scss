@@ -1,0 +1,397 @@
+/* Custom CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-custom {
+    background-color: black;
+    border-radius: 50px;
+    height: 70px;
+    padding: 0 15px;
+    width: 70%;
+}
+
+.navbar-custom .nav-link {
+    color: white;
+    background-color: transparent;
+}
+
+.navbar-custom .nav-link.active {
+    background-color: #FEB273;
+    color: black;
+    border-radius: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+//
+.carousel {
+    .carousel-caption {
+        position: static;
+        padding-top: 1rem;
+
+        p {
+            font-size: 1rem;
+            font-size: 26px;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+
+        h5 {
+            margin-top: 0.5rem;
+            font-size: 26px;
+        }
+    }
+}
+
+.project-ideas {
+    font-size: 40px;
+
+    span {
+        color: #FEB273;
+        ;
+    }
+}
+
+.let-connected {
+    font-size: 32px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 122px;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 2%;
+    background-color: #424242;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.let-connected {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.let-connected span {
+    color: #FEB273;
+}
+
+.icons {
+    display: flex;
+    gap: 2%;
+}
+
+.contact,
+.navigation {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading {
+    color: #FEB273;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.positioned-image {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 100%;
+    left: -50px;
+    transform: translateY(0);
+}
+
+.intro-text {
+    font-size: 54px;
+    font-weight: 500;
+
+    span {
+        color: #FEB273;
+        ;
+    }
+}
+
+.image-section {
+    .left {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right {
+
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+        .years {
+            color: #171717;
+            font-size: 36px;
+            font-weight: 700
+        }
+
+        .exp {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    ;
+}
+
+
+//
+
+.hovered .introduction {
+    display: none;
+    /* Hide introduction on hover */
+}
+
+.hovered {
+    .image-section {
+        background-image: url(../../../assets/images/Frame\ 68.svg);
+        background-size: contain;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .left {
+        margin-top: 10%;
+        justify-content: start;
+    }
+
+    .right {
+        margin-top: 10%;
+        justify-content: start;
+    }
+}
+
+.frame-image {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    display: none;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hovered .orange-bg-circle {
+    display: block;
+    /* Show the image on hover */
+
+}
+
+.popcorn-section {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #000000BD;
+    overflow: hidden;
+    height: 90vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* Added to make the section align vertically */
+}
+
+.circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: rotate 100s linear infinite;
+}
+
+.popcorn {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+}
+
+.popcorn1 {
+    animation: orbit 6s linear infinite;
+    animation-delay: 0s;
+}
+
+.popcorn2 {
+    animation: orbit 6s linear infinite;
+    animation-delay: 4s;
+}
+
+.popcorn3 {
+    animation: orbit 6s linear infinite;
+    animation-delay: 8s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateX(180px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(180px) rotate(-360deg);
+    }
+}
+
+.glass-card {
+    background: #68686833;
+    border: none;
+    backdrop-filter: blur(10px);
+    border-radius: 55px;
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 500px;
+    flex: 0 0 auto;
+    /* Prevent flex items from shrinking or growing */
+    border: 1px solid #938988;
+}
+
+.circle-arrow {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+    background: #1C2939CC;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title {
+    border-bottom: 1px solid #938988;
+    padding: 5%;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.circle-arrow::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1C2939CC;
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+}
+
+.arrow {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    z-index: 999;
+}
+
+.cards-container {
+    display: flex;
+    gap: 35px;
+    padding-left: 3%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+.cards-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.frame-image {
+    display: none;
+}
+
+.hovered .frame-image {
+    display: block;
+}
+
+.disploay-intro {
+    display: none;
+}
+
+.person-image {
+    margin-top: 100px;
+}
+
+//
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .let-connected,
+    .contact,
+    .navigation {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .icons {
+        justify-content: flex-start;
+    }
+}
+
+.why-hire-me {
+    color: white;
+    font-size: 46px;
+
+    span {
+        color: #FEB273;
+    }
+
+    p {
+        font-size: 26px;
+        padding-left: 22%;
+        padding-right: 22%;
+    }
+}

@@ -1,0 +1,333 @@
+<div class="p-5">
+    <div class="pl-5 pr-5 w-100 d-flex align-items-center  justify-content-center">
+        <nav class="pl-5 pr-5 navbar navbar-expand-lg navbar-custom">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-between w-100">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/about" routerLinkActive="active">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/contact" routerLinkActive="active">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/contact" routerLinkActive="active">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="introduction" [ngClass]="{'disploay-intro': isHovered}" (mouseenter)="toggleHover(true)"
+        (mouseleave)="toggleHover(false)">
+        <div class="d-flex justify-content-center align-items-center mt-5">
+            <div class="position-relative border border-dark d-flex justify-content-center align-items-center"
+                style="width: 100px; height: 40px; border-radius: 20px;">
+                <span class="font-weight-bold text-black">Hello!</span>
+                <img src="../../../assets/images/Vector 1.svg" alt="Leaf Image" class="position-absolute"
+                    style="width: 50px; height: 50px;top: -35px;right: -44px; ">
+            </div>
+        </div>
+        <div class="intro-text position-relative d-flex justify-content-center">
+            <div class="text-center position-relative d-inline-block">
+                <div>I'm <span>Shoaib,</span></div>
+                <div>Software Developer</div>
+                <img src="../../../assets/images/Vector 2.svg" alt="Leaf Image" class="positioned-image">
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between w-100 image-section" [ngClass]="{'hovered': isHovered}">
+        <div class="w-25 left">
+            <div class="mb-4"><i class="fa fa-solid fa-quote-left fa-xl" style="color: #344054;"></i></div>
+            Innovative Software Developer with a
+            proven track record in designing and
+            efficient coding.
+        </div>
+        <div class="orange-bg-circle w-50 d-flex justify-content-center ">
+            <img src="../../../assets/images/Untitled_design__23__1-removebg-preview (2).png" alt="Person Image"
+                class="person-image">
+        </div>
+        <img src="../../../assets/images/Frame 68.svg" [ngClass]="{'hovered': isHovered}" class="frame-image" alt="">
+
+        <div class="w-25 right">
+            <div><img src="../../../assets/images/Frame 4.svg" style="width: 130px;" alt=""></div>
+            <div class="years">10 YEARS</div>
+            <div class="exp">Experience</div>
+        </div>
+
+    </div>
+
+    <!-- popcorn section  -->
+    <div class="popcorn-section">
+        <div class="circle">
+            <img src="../../../assets/images/light-yellow-abstract-background-3d-illustration-3d-rendering 3.svg"
+                class="popcorn popcorn1" alt="Popcorn 1">
+            <img src="../../../assets/images/light-yellow-abstract-background-3d-illustration-3d-rendering 3.svg"
+                class="popcorn popcorn2" alt="Popcorn 2">
+            <img src="../../../assets/images/light-yellow-abstract-background-3d-illustration-3d-rendering 3.svg"
+                class="popcorn popcorn3" alt="Popcorn 3">
+        </div>
+
+        <div class="cards-container mt-5">
+            <div class="card glass-card">
+                <div class="card-body">
+                    <h5 class="card-title">UI/ UX Design</h5>
+                </div>
+                <div class="image-card">
+                    <img src="../../../assets/images/Frame 61.svg" style="width: 100%; height: auto;" alt="">
+                </div>
+                <div class="circle-arrow">
+                    <img src="../../../assets/images/up right.svg" width="100" height="100" class="arrow" alt="">
+                </div>
+            </div>
+            <div class="card glass-card">
+                <div class="card-body">
+                    <h5 class="card-title">3D Modeling</h5>
+                </div>
+                <div class="image-card">
+                    <img src="../../../assets/images/Frame 61 (1).svg" style="width: 100%; height: auto;" alt="">
+                </div>
+                <div class="circle-arrow">
+                    <img src="../../../assets/images/up right.svg" width="100" height="100" class="arrow" alt="">
+                </div>
+            </div>
+            <div class="card glass-card">
+                <div class="card-body">
+                    <h5 class="card-title">.Net Development</h5>
+                </div>
+                <div class="image-card">
+                    <img src="../../../assets/images/Frame 61 (2).svg" style="width: 100%; height: auto;" alt="">
+                </div>
+                <div class="circle-arrow">
+                    <img src="../../../assets/images/up right.svg" width="100" height="100" class="arrow" alt="">
+                </div>
+            </div>
+            <div class="card glass-card">
+                <div class="card-body">
+                    <h5 class="card-title">Frontend Dev</h5>
+                </div>
+                <div class="image-card">
+                    <img src="../../../assets/images/Frame 61.svg" style="width: 100%; height: auto;" alt="">
+                </div>
+                <div class="circle-arrow">
+                    <img src="../../../assets/images/up right.svg" width="100" height="100" class="arrow" alt="">
+                </div>
+            </div>
+            <div class="card glass-card">
+                <div class="card-body">
+                    <h5 class="card-title">Angular Dev</h5>
+                </div>
+                <div class="image-card">
+                    <img src="../../../assets/images/Frame 61 (1).svg" style="width: 100%; height: auto;" alt="">
+                </div>
+                <div class="circle-arrow">
+                    <img src="../../../assets/images/up right.svg" width="100" height="100" class="arrow" alt="">
+                </div>
+            </div>
+            <div class="card glass-card">
+                <div class="card-body">
+                    <h5 class="card-title">SQL Database</h5>
+                </div>
+                <div class="image-card">
+                    <img src="../../../assets/images/Frame 61 (2).svg" style="width: 100%; height: auto;" alt="">
+                </div>
+                <div class="circle-arrow">
+                    <img src="../../../assets/images/up right.svg" width="100" height="100" class="arrow" alt="">
+                </div>
+            </div>
+            <div class="card glass-card">
+                <div class="card-body">
+                    <h5 class="card-title">SSMS</h5>
+                </div>
+                <div class="image-card">
+                    <img src="../../../assets/images/Frame 61.svg" style="width: 100%; height: auto;" alt="">
+                </div>
+                <div class="circle-arrow">
+                    <img src="../../../assets/images/up right.svg" width="100" height="100" class="arrow" alt="">
+                </div>
+            </div>
+            <div class="card glass-card">
+                <div class="card-body">
+                    <h5 class="card-title">React</h5>
+                </div>
+                <div class="image-card">
+                    <img src="../../../assets/images/Frame 61.svg" style="width: 100%; height: auto;" alt="">
+                </div>
+                <div class="circle-arrow">
+                    <img src="../../../assets/images/up right.svg" width="100" height="100" class="arrow" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="text-center mt-5" style="font-size: 40px; font-weight: 400;">
+            Feature <span style=" color: #FEB273;">Projects</span>
+        </div>
+        <div class="d-flex w-100 justify-content-center flex-wrap" style="gap:3%">
+            <div class="rounded text-center text-white p-4 mb-3"
+                style="width: 350px; height: 350px; background-color: #424242;">
+                <div style="font-size: 32px;" class="mb-2">Smart HR System</div>
+                <img src="../../../assets/images/Untitled design (28) 1.svg" class="w-100" style="height: 80%;" alt="">
+            </div>
+            <div class="rounded text-center text-white p-4 mb-3"
+                style="width: 350px; height: 350px; background-color: #424242;">
+                <div style="font-size: 32px;" class="mb-2">Smart HR System</div>
+                <img src="../../../assets/images/Untitled design (26) 1.svg" class="w-100" style="height: 80%;" alt="">
+            </div>
+            <div class="rounded text-center text-white p-4 mb-3"
+                style="width: 350px; height: 350px; background-color: #424242;">
+                <div style="font-size: 32px;" class="mb-2">Smart HR System</div>
+                <img src="../../../assets/images/web-removebg-preview 1.svg" class="w-100" style="height: 80%;" alt="">
+            </div>
+            <div class="rounded text-center text-white p-4 mb-3"
+                style="width: 350px; height: 350px; background-color: #424242;">
+                <div style="font-size: 32px;" class="mb-2">Smart HR System</div>
+                <img src="../../../assets/images/Saas2-removebg-preview 1.svg" class="w-100" style="height: 80%;" alt="">
+            </div>
+            <div class="rounded text-center text-white p-4 mb-3"
+                style="width: 350px; height: 350px; background-color: #424242;">
+                <div style="font-size: 32px;" class="mb-2">Smart HR System</div>
+                <img src="../../../assets/images/5 1 (1).svg" class="w-100" style="height: 80%;" alt="">
+            </div>
+            <div class="rounded text-center text-white p-4 mb-3"
+                style="width: 350px; height: 350px; background-color: #424242;">
+                <div style="font-size: 32px;" class="mb-2">Smart HR System</div>
+                <img src="../../../assets/images/FMS-removebg-preview 1.svg" class="w-100" style="height: 80%;" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: #424242; height: auto;border-radius: 20px;" class="w-100 text-center why-hire-me pb-5">
+        <div style="margin: 2% 0%;padding: 2% 0% 0% 0%;">why <span>Hire Me</span></div>
+        <p class="mb-5">
+            As a passionate software developer, I offer technical expertise, innovative problem-solving skills, and a
+            commitment to continuous learning.
+        </p>
+        <div class="d-flex flex-wrap w-100 justify-content-around pl-4 pr-4">
+            <div class="rounded" style="width: 32%; height: 250px; background: #FD853A;border-radius: 30px !important">
+                <div class="text" style="height: 25%;font-size: 36px;">
+                    Projects
+                </div>
+                <div class="d-flex justify-content-center align-items-center"
+                    style="height: 75%;border-radius: 20px; background-color: gray;font-size: 60px;">
+                    10
+                </div>
+            </div>
+            <div class="rounded" style="width: 32%; height: 250px; background: #FD853A;border-radius: 30px !important">
+                <div class="text" style="height: 25%;font-size: 36px;">
+                    Clients
+                </div>
+                <div class="d-flex justify-content-center align-items-center"
+                    style="height: 75%;border-radius: 20px; background-color: gray;font-size: 60px;">
+                    6
+                </div>
+            </div>
+            <div class="rounded" style="width: 32%; height: 250px; background: #FD853A;border-radius: 30px !important">
+                <div class="text" style="height: 25%;font-size: 36px;">
+                    Experience
+                </div>
+                <div class="d-flex justify-content-center align-items-center"
+                    style="height: 75%;border-radius: 20px; background-color: gray;font-size: 60px;">
+                    10
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="testimonialCarousel" class="carousel slide mt-5 rounded m-5" style="background-color: #424242;"
+        data-ride="carousel">
+        <div class="carousel-inner p-5">
+            <div class="carousel-item  active" data-aos="fade-right">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="../../../assets/images/Rectangle 25.svg" class="rounded-circle" alt="..."
+                        style="width: 150px; height: 150px;">
+                    <div class="text-white carousel-caption">
+                        <p>"Exceeded our expectations by delivering a robust and scalable solution on time and within
+                            budget."</p>
+                        <h5>John Doe</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-aos="fade-up-left">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="../../../assets/images/Rectangle 25.svg" class="rounded-circle" alt="..."
+                        style="width: 150px; height: 150px;">
+                    <div class="text-white carousel-caption">
+                        <p>"Exceeded our expectations by delivering a robust and scalable solution on time and within
+                            budget."</p>
+                        <h5>Jane Doe</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-aos="fade-right">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="../../../assets/images/Rectangle 25.svg" class="rounded-circle" alt="..."
+                        style="width: 150px; height: 150px;">
+                    <div class="text-white carousel-caption">
+                        <p>"Exceeded our expectations by delivering a robust and scalable solution on time and within
+                            budget."</p>
+                        <h5>Jane Doe</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-aos="fade-up-left">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="../../../assets/images/Rectangle 25.svg" class="rounded-circle" alt="..."
+                        style="width: 150px; height: 150px;">
+                    <div class="text-white carousel-caption">
+                        <p>"Exceeded our expectations by delivering a robust and scalable solution on time and within
+                            budget."</p>
+                        <h5>Jane Doe</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" data-target="#testimonialCarousel" type="button" data-slide="prev">
+            <img src="../../../assets/images/Vector.svg" alt="Previous slide">
+        </a>
+        <a class="carousel-control-next" data-target="#testimonialCarousel" type="button" data-slide="next">
+            <img src="../../../assets/images/Vector (1).svg" alt="Next slide">
+        </a>
+    </div>
+
+    <div class="text-center project-ideas">
+        Have a new <span>Project Idea?</span> <br> <span>Lets</span> Discuss!
+    </div>
+</div>
+<!-- footer  -->
+<div class="footer-container"
+    style="background-color: #424242; padding: 2% 2% 0% 2%; border-top-left-radius: 40px; border-top-right-radius: 40px;">
+    <div class="footer-content mb-3 pb-4">
+        <div class="let-connected">
+            <div>Let’s <span>Connect</span></div>
+            <div class="icons">
+                <i class="fa fa-brands fa-xl fa-facebook" style="color: #dbdbdb;"></i>
+                <i class="fa fa-brands fa-xl fa-youtube" style="color: #dbdbdb;"></i>
+                <i class="fa fa-brands fa-xl fa-whatsapp" style="color: #dbdbdb;"></i>
+                <i class="fa fa-brands fa-xl fa-instagram" style="color: #dbdbdb;"></i>
+                <i class="fa fa-brands fa-xl fa-twitter" style="color: #dbdbdb;"></i>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="heading">Contact</div>
+            <div>(+92) 3359939289</div>
+            <div>{{email}}</div>
+            <div>https://github.com/mshoaibk </div>
+        </div>
+        <div class="navigation">
+            <div class="heading">Navigation</div>
+            <div>Home</div>
+            <div>Services</div>
+            <div>Project</div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center w-100 text-white mt-2 mb-2 w-100 flex-wrap">
+        <span class="w-50">Copyright© 2023 Shoaib. All Rights Reserved.</span>
+        <span class="w-50">User Terms & Conditions | Privacy Policy</span>
+    </div>
+</div>
